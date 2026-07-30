@@ -95,9 +95,17 @@ export function SiteHeader() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-10">
         <Link
           href="/"
-          className="font-serif text-[28px] font-bold leading-[150%] text-primary transition-all duration-200 hover:opacity-90 active:scale-[0.98] sm:text-[32px]"
+          aria-label="0211wohnen home"
+          className="relative h-[60px] w-[150px] shrink-0 transition-all duration-200 hover:opacity-80 active:scale-[0.98] sm:w-[170px]"
         >
-          o211wohnen
+          <Image
+            src="/images/0211-weiß.png"
+            alt="0211wohnen"
+            fill
+            priority
+            sizes="(max-width: 640px) 150px, 170px"
+            className="object-contain [filter:brightness(0)_saturate(100%)_invert(50%)]"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 font-manrope text-[16px] font-semibold leading-[150%] text-slate-600 md:flex">
