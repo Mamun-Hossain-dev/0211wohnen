@@ -28,9 +28,19 @@ export function SiteFooter() {
       <div className="container relative mx-auto px-6 py-12 lg:px-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4 md:items-center md:pr-[260px]">
           <div>
-            <h4 className="font-serif text-[28px] font-bold text-[#1672E6]">
-              0211wohnen
-            </h4>
+            <Link
+              href="/"
+              aria-label="0211wohnen home"
+              className="relative block h-[64px] w-[175px] transition-opacity hover:opacity-80"
+            >
+              <Image
+                src="/images/0211-weiß.png"
+                alt="0211wohnen"
+                fill
+                sizes="175px"
+                className="object-contain [filter:brightness(0)_saturate(100%)_invert(50%)]"
+              />
+            </Link>
             <p className="mt-3 text-sm leading-6 text-slate-500">
               <TranslatedText
                 text="Your trusted partner for furnished temporary accommodation in Düsseldorf."
