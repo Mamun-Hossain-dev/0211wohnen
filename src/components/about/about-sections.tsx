@@ -223,7 +223,7 @@ export function AboutSections() {
             <article key={member.name} className="flex h-full min-h-[360px] flex-col text-center">
               <div className="mx-auto w-[225px] rounded-[46%_54%_41%_59%/51%_45%_55%_49%] bg-[#0F7EFF] p-2 sm:w-[250px]">
                 <Image
-                  src="/images/team-1.png"
+                  src="/images/default-user.png"
                   alt={member.name}
                   width={255}
                   height={180}
